@@ -35,4 +35,3 @@ This project is a beginner-friendly MVP:
 
 - This is an MVP, so the best-supported experience is Reading view.
 - In Live Preview, the line you are actively editing stays as raw text so the hex value remains easy to change.
-- If you want, the next improvement can be a settings tab for size, border radius, and whether normal tags should be ignored entirely.
