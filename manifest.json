@@ -1,0 +1,10 @@
+{
+  "id": "hex-color-chips",
+  "name": "Hex Color Chips",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Render hex color codes like #0A2E5C as inline color chips instead of plain tags.",
+  "author": "Humanphobic",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
