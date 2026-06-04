@@ -1,37 +1,52 @@
-# Hex Color Chips for Obsidian
+# Hex Color Chips
 
-Render hex color codes such as `#0A2E5C` as small inline color chips instead of letting them look like plain tags.
+Render hex color codes in Obsidian as inline color chips instead of plain text tags.
 
-This project is a beginner-friendly MVP:
+## Features
 
-- It is written in plain JavaScript, so there is no build step.
-- It is ready to test locally in Obsidian.
-- It is simple to upload to GitHub when you are ready.
+- Renders hex values such as `#0A2E5C` as visual chips in Reading view.
+  - `#FFF`
+  - `#FFFF`
+  - `#0A2E5C`
+  - `#0A2E5CCC`
 
-## What it does
+## Installation
 
-- Replaces rendered hex tags like `#0A2E5C` with a visual chip in Reading view.
-- Styles matching hex tokens in Live Preview when Obsidian exposes them as hashtag tokens.
-- Supports 3, 4, 6, and 8 digit hex values such as `#FFF`, `#FFFF`, `#0A2E5C`, and `#0A2E5CCC`.
+This plugin is currently intended for manual installation.
 
-
-## Install Locally In Obsidian
-
-1. Open Obsidian.
-2. Go to `Settings -> Community plugins`.
-3. Turn off Safe mode if Obsidian asks.
-4. Click `Open plugins folder`.
-5. Create a folder named `hex-color-chips`.
-6. Copy these four files into that folder:
+1. Open your vault's plugins folder: `.obsidian/plugins/`
+2. Create a folder named `hex-color-chips`
+3. Copy these files into it:
    - `manifest.json`
    - `main.js`
    - `styles.css`
    - `versions.json`
-7. Go back to `Settings -> Community plugins`.
-8. Click `Reload plugins` if needed.
-9. Enable `Hex Color Chips`.
+4. In Obsidian, open `Settings -> Community plugins`
+5. Reload plugins if needed, then enable `Hex Color Chips`
+
+## Usage
+
+Write a hex color code directly in your note, for example:
+
+```md
+#0A2E5C
+```
+
+The plugin will render the value as a color chip where supported.
 
 ## Notes
 
-- This is an MVP, so the best-supported experience is Reading view.
-- In Live Preview, the line you are actively editing stays as raw text so the hex value remains easy to change.
+- Reading view currently provides the most reliable experience.
+- In Live Preview, the line you are actively editing remains raw text to keep the value easy to edit.
+- Raw hex values are still interpreted by Obsidian as tags.
+
+## Project
+
+- `manifest.json`: Obsidian plugin manifest
+- `main.js`: plugin logic
+- `styles.css`: chip styling
+- `versions.json`: version compatibility map
+
+## License
+
+[MIT](./LICENSE)
